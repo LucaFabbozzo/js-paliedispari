@@ -1,6 +1,5 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
   background-color: #ededed;
 }
 
@@ -10,4 +9,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
+}
+
+input {
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  margin: 10px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  background-color: #9361c1;
+  color: white;
+  border-radius: 5px;
 }
