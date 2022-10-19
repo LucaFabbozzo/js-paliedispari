@@ -7,6 +7,7 @@
 // **Consigli del giorno**
 // 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+const output = document.querySelector('.output');
 
 
 //l'utente sceglie paro o dispari;
@@ -31,13 +32,13 @@ console.log(somma)
 
 function pari_dispari() {
   if(somma % 2 === 0 && scelta === 'pari') {
-    console.log('hai vinto');
+    output.innerText = 'Hai Vinto! 😉'
   } else if(somma % 2 !== 0 && scelta === 'dispari') {
-    console.log('hai vinto');
+    output.innerText = 'Hai Vinto! 😉'
   } else if(somma % 2 === 0 && scelta === 'dispari') {
-    console.log('hai perso');
+    output.innerText = 'Hai Perso 🥲'
   } else if(somma % 2 !== 0 && scelta === 'pari') {
-    console.log('hai perso');
+    output.innerText = 'Hai Perso 🥲'
   }
 }
 
