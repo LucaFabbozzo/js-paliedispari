@@ -24,7 +24,6 @@ function invertireParola(string){
   //   parolaInversa += string[i];
   // }
 
-
   //metodo con formula 
   //split('') => splittando una stringa ottengo un array tanto quanto sono i caratteri della stringa
   //reverse() => gira un'array

@@ -1,4 +1,3 @@
-// **Pari e Dispari**
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 // Sommiamo i due numeri
@@ -17,24 +16,23 @@ let numeroUtente;
 let numeroComputer;
 let somma;
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', btnTop);
+btnDue.addEventListener('click', btnBottom);
+
+
+function btnTop() {
   scelta = input.value.toLowerCase().trim();
   input.value = '';
-})
+}
 
 
-btnDue.addEventListener('click', function(){
-
+function btnBottom(){
   numeroUtente = inputDue.valueAsNumber;
   inputDue.value = '';
-
-  numeroComputer = Math.floor(Math.random() * 5) + 1;
-
+  numeroComputer = getRandomNumber(1, 5);
   somma = numeroUtente + numeroComputer;
-
   pari_dispari();
-
-})
+}
 
 
 
@@ -51,5 +49,7 @@ function pari_dispari() {
 }
 
 
-
+function getRandomNumber(max, min) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
