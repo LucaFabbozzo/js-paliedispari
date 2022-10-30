@@ -18,7 +18,7 @@ let numeroComputer;
 let somma;
 
 btn.addEventListener('click', function(){
-  scelta = input.value.toLowerCase();
+  scelta = input.value.toLowerCase().trim();
   input.value = '';
 })
 
